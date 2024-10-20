@@ -1,0 +1,20 @@
+name: concat
+
+on: [push, workflow_dispatch]
+
+jobs: 
+  concat:
+    runs-on: ubuntu-24.04
+    steps:
+    - name: Setup Noto
+      uses: awalsh128/cache-apt-pkgs-action@latest
+      with:
+        packages: fonts-noto-cjk
+    - name: Checkout
+      uses: actions/checkout@v4
+    - name: concat
+      run:  python3 lecture.py
+    - name: compile
+      run:  
+    - name: Pushback
+      run: bash ./pushback.sh

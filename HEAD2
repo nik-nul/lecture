@@ -1,0 +1,19 @@
+    \end{flushleft}
+    &
+    \begin{center}
+        \textit{“Sidera fines transibunt praescriptos.”\\“星辰終將凌越其分野。”}
+    \end{center}
+    &
+    \begin{flushright}
+        \textbf{南京市栖霞区}
+    \end{flushright}
+\end{tabularx}
+\vspace{-3.5mm}
+\hrule
+\vspace{4mm}
+\centerline{\huge\textbf{讲座预告}}
+\vspace{12pt}
+\centerline{\begin{tabular}{|c|c|c|}
+    \hline
+    往期讲座 & 开展日期 & 刊载日期\\
+    \hline\hline
