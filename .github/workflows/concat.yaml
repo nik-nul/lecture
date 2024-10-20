@@ -15,6 +15,8 @@ jobs:
         cache: 'pip'
     - run: pip install -r requirements.txt
     - name: concat
-      run:  python3 lecture.py
+      run:  |
+          python3 lecture.py
+          cp news.tex index.html
     - name: Pushback
       run: bash ./pushback.sh
