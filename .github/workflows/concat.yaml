@@ -6,10 +6,12 @@ jobs:
   concat:
     runs-on: ubuntu-24.04
     steps:
-    - name: Setup Noto
-      uses: awalsh128/cache-apt-pkgs-action@latest
+    - name: Setup feedgen & bs4
+      uses: actions/setup-python@v5
       with:
-        packages: fonts-noto-cjk
+        python-version: '3.11'
+        cache: 'pip'
+    - run: pip install -r requirements.txt
     - name: Checkout
       uses: actions/checkout@v4
     - name: concat
